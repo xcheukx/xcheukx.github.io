@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body class="home">
+
+    {% include header.html %}
+<div id="page">
+    {% include sidebar.html %}
+    <!-- <main class="page-content" aria-label="Content">
+      <div class="wrapper"> -->
+    <div id="content">
+      <header class="page-hd">
+        <div class="logo"><img src="<?php bloginfo('template_directory'); ?>/img/logo.svg" alt=""></div>
+              <div class="page-info">
+                  <div class="title"><?php bloginfo('name'); ?></div>
+                  <div class="sub-title"><em>日常记录</em> x 请注意</div>
+              </div>
+      </header>
+        {{ content }}
+      <!-- </div>
+    </main> -->
+
+    {% include footer.html %}
+    </div>
+  </div>
+  </body>
+
+</html>

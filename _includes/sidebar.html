@@ -1,0 +1,42 @@
+<aside id="sidebar">
+			<header id="header">
+				<div class="hd-cover"><img src="http://blog.xcheukx.com/wp-content/uploads/2016/10/2d129ed19cb00267d9e2d2c3f1d4c4f9.png" alt=""></div>
+				<div class="hd-title">xcheukx</div>
+				<div class="hd-description">广东, 深圳</div>
+				<a class="btn-download" href="http://www.xcheukx.com/asset/img/profile.pdf" target="_blank">下载简历</a>
+			</header>
+			<div class="widget widget-social">
+				<a href="http://wpa.qq.com/msgrd?v=3&uin=281554584&site=qq&menu=yes" class="social-item social-qq" data-type="qq" target="_blank"><i class="icon icon-qq"></i></a>
+				<a href="javascript:void(0);" class="social-item social-sina" data-type="sina" target="_blank"><i class="icon icon-sina"></i></a>
+				<a href="javascript:void(0);" class="social-item social-wechat" data-type="wechat"><i class="icon icon-wechat"></i></a>
+			</div>
+			<div class="widget widget-category">
+				<div class="widget-hd"><span>分类</span></div>
+				<div class="widget-bd">
+					<ul class="category-list">
+						{% for tag in site.tags %} 
+						<li class="category-item"><a href="javascript:void(0);"><span>{{ tag[0] }}</span><em class="count-num">{{ tag | last | size }}</em></a></li>
+						{% endfor %}
+						<!-- <li class="category-item"><a href="javascript:void(0);"><span>前端</span><em class="count-num">5</em></a></li>
+						<li class="category-item"><a href="javascript:void(0);"><span>设计</span><em class="count-num">2</em></a></li>
+						<li class="category-item"><a href="javascript:void(0);"><span>插画</span><em class="count-num">1</em></a></li>
+						<li class="category-item"><a href="javascript:void(0);"><span>开发</span><em class="count-num">2</em></a></li>
+						<li class="category-item"><a href="javascript:void(0);"><span>杂谈</span><em class="count-num">10</em></a></li> -->
+
+					</ul>
+				</div>
+			</div>
+			<div class="widget widget-about">
+				<a href="http://www.xcheukx.com/index.html#profile" class="widget-link" target="_blank">关于我</a>
+			</div>
+			<div class="widget widget-board" style="display:none;">
+				<a href="javascript:void(0);" class="widget-link">留言板</a>
+			</div>
+			<div class="widget widget-post" style="display:none;">
+				<div class="widget-hd"><span>最新文章</span></div>
+				<div class="widget-bd">
+					ul.w-post-list>li.w-post-item*5>(.w-post-cover>img)+.w-post-content>.w-post-title+.w-post-time
+				</div>
+			</div>
+		</aside>
+		<span class="m-idebar-trigger"></span>
