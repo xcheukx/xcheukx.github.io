@@ -2,5 +2,7 @@
 layout: post
 title:  "从WordPress换成这个试试"
 date:   2017-08-03 14:25:00 +0800
+cover: "assets/img/cover/1.png"
 tags: [杂谈, 前端]
 ---
+hahahahah

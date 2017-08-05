@@ -17,7 +17,7 @@ title: Cheuk Blog
 email: charcho@163.com
 description: "Haha"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://www.xcheuk.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://cheukis.top" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  xcheukx
 
@@ -28,6 +28,9 @@ markdown: kramdown
 plugins:
   - jekyll-feed
 
+# uyan settings
+uyan:
+  uid: 2140799
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.

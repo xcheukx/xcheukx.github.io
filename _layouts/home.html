@@ -3,12 +3,12 @@ layout: default
 ---
 
   
-  {{ content }}
+<!--   {{ content }} -->
 
       <article class="post-list cf">
     {% for post in site.posts %}
         <section class="post">
-          <div class="post-cover"><img src="http://iph.href.lu/800x440" alt="" />
+          <div class="post-cover"><img src="{% if post.cover %}{{post.cover}}{% else %}http://iph.href.lu/800x440?text=None{% endif %}" alt="" />
           </div>
           <div class="post-hd">
             <div class="post-category">

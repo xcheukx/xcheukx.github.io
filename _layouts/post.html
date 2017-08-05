@@ -1,13 +1,13 @@
 ---
 layout: default
 ---
-<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+<!-- <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
     <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        <!-- {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %} -->
+        // {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
         {% assign date_format = site.minima.date_format | default: "%Y-%m-%d %H:%M:%S" %}
         {{ page.date | date: date_format }}
       </time>
@@ -23,4 +23,30 @@ layout: default
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
   {% endif %}
+</article> -->
+
+<article class="page-article">
+  <div class="article-cover"><img src="{% if page.cover %}{{page.cover}}{% else %}http://iph.href.lu/800x440?text=None{% endif %}" alt="" /></div>
+  <header class="article-hd">
+    <div class="article-category">
+      <ul class="post-categories">
+        {% for tag in page.tags %}
+        <li><a href="http://blog.xcheukx.com/category/front-end/" rel="category tag">{{ tag }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+    <h2 class="article-title"><a href="javascript:void(0)">{{ page.title | escape }}</a></h2>
+    {% assign date_format = site.minima.date_format | default: "%Y-%m-%d" %}
+    <div class="article-date">{{ page.date | date: date_format }}</div>
+  </header>
+  <div class="article-content">
+    {{ content }}
+  </div>
+{% if site.uyan.uid %}
+
+  <section style="padding:30px;">
+      <!-- {% include uyan_comments.html %} -->
+      {% include changyan_comments.html %}
+  </section>
+{% endif %}
 </article>
