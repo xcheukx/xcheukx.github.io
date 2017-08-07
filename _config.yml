@@ -31,6 +31,11 @@ plugins:
 # uyan settings
 uyan:
   uid: 2140799
+
+# changyan setting
+changyan:
+  appid: cyt9f1ibh
+  conf: prod_e44c6ee7973a15673d59e8336c5929fa
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
