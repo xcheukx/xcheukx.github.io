@@ -17,3 +17,7 @@ tags: [React,前端]
 3. `react-native run-android`
 
 问题就解决好了
+
+问：<Text>文字怎么换行
+
+答：{'\n'} 相当于<br />
