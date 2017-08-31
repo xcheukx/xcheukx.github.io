@@ -21,3 +21,8 @@ tags: [React,前端]
 问：<Text>文字怎么换行
 
 答：{'\n'} 相当于<br />
+
+问：Unable to process incoming event ‘ProgressComplete ’ (ProgressCompleteEvent)
+
+答：执行 ./gradlew assembleRelease --console plain
+
